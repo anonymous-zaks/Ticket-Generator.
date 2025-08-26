@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generator.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="header">
+        <img src="./assets/images/logo-full.svg" alt="" class="logo-full">
+
+    </div>
+    
+        <h2>  Your Journey to Coding Conf </br>2025 Starts Here!
+
+</h2>
+        <h3>  Secure your spot at next year's biggest coding conference.
+</h3>
+    
+    <div class="form-wrapper">
+    <form action="">
+        <section id="ticketPreview" hidden>
+  <img src="assets/images/pattern-ticket.svg" id="ticketAvatar" alt="avatar" />
+  <h3 id="ticketName"></h3>
+  <p id="ticketEmail"></p>
+  <p id="ticketGithub"></p>
+</section>
+
+<div id="formErrors" role="alert" aria-live="polite"></div>
+
+
+
+
+
+
+       <div>
+        <span>Upload Avatar</span>
+       <div class="upload-box">
+  <label for="avatar" class="upload-label">
+   
+    <p>Drag and drop or click to upload</p>
+    <input type="file" id="avatar" name="file" hidden>
+  </label>
+      </div>
+    </div>
+
+       <div class="inputs">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName">
+    </div>
+        <div class="inputs">
+    <label for="email">Email address</label>
+        <input type="email" placeholder="example@email.com"  id="email">
+    </div>
+        <div class="inputs">
+            <label for="github">Github username</label>
+        <input type="text" placeholder="@username" id="github">
+    </div>
+        <button type="submit">Generate My Ticket</button>
+    </form>
+    </div>
+</div>
+<script src="main.js"></script>    
+</body>
+</html>
